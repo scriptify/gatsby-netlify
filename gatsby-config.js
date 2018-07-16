@@ -16,6 +16,7 @@ module.exports = {
               path: `${__dirname}/cms/`,
             },
         },
+        'gatsby-transformer-remark',
         'gatsby-plugin-netlify-cms'
     ]
 };
