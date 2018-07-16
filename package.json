@@ -10,7 +10,9 @@
   "dependencies": {
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-netlify-cms": "^2.0.1",
     "gatsby-plugin-typography": "^1.7.19",
+    "netlify-cms": "^1.9.3",
     "typography-theme-moraga": "^0.15.10"
   }
 }

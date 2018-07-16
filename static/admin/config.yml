@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+media_folder: "static/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+- label: "Seiten"
+  name: "pages"
+  files:
+    - label: "Startseite"
+      name: "home"
+      file: "cms/sites/start.yaml"
+      fields:
+        - {label: Titel, name: title, widget: string}
+        - {label: Text, name: text, widget: markdown}
+        - label: Team
+          name: team
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Position, name: position, widget: string}
+            - {label: Photo, name: photo, widget: image}
+    - label: "Über"
+      name: "about"
+      file: "cms/sites/about.yaml"
+      fields:
+        - {label: Titel, name: title, widget: string}
+        - {label: Text, name: text, widget: markdown}
